@@ -1,0 +1,139 @@
+:root {
+    --background: #0F0F0F;
+    --principal: #DE5912; 
+    --secondary: #DE725C;
+    --text: #F2F1F1;
+
+    overflow-x: hidden;
+}
+
+/*
+font-family: "Abril Fatface";
+font-family: "Nothing you could do";
+font-family: "Rubik";
+*/
+
+body{
+    overflow-x: hidden;
+    max-width: 100vw;
+
+    background-color: var(--background);
+
+
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    min-width: 100vw;
+    min-height: 5vh;
+
+    padding: 2vh 0;
+
+    z-index: 99;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: var(--background);
+}
+
+.navbar--page{
+    background-color: var(--principal);
+    position: fixed;
+
+    min-height: 91vh;
+    min-width: 100vw;
+
+    bottom: 0;
+    left: 0;
+
+    z-index: 99;
+}
+
+.navbar--container{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a{
+    text-decoration: none;
+    color: var(--background);
+}
+
+.navbar--header{
+    font-size: 72px;
+    font-family: "Abril Fatface";
+    text-align: center;
+    margin: 5vh 0;
+
+    transition: linear .5s;
+}
+
+.navbar--image{
+    width: 10vw;
+
+    position: absolute;
+
+    opacity: 0;
+
+    transition: ease-in-out .2s;
+
+}
+
+.navbar--header:hover a{
+    cursor: pointer;
+
+    color: var(--secondary);
+    font-family: "Nothing you could do";
+}
+
+
+.navbar--header:hover .navbar--image{
+    opacity: 1;
+}
+
+.name--tag{
+    font-family: "Nothing you could do";
+
+    font-size: 36px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: linear .2s;
+}
+
+.name--tag a{
+    color: var(--principal);
+}
+
+.name--tag:hover a{
+    cursor: pointer;
+    color: #DE725C;
+}
+
+.nav--icon{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+
+    font-family: "Rubik";
+    font-size: 50px;
+
+    color: var(--principal);
+
+    transition: linear .2s;
+}
+
+.nav--icon:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}

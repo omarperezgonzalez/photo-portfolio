@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/styles/home.css" rel="stylesheet" />
+        <link href="/styles/style.css" rel="stylesheet" />
+
+        <title>Omar Pérez</title>
+        <link rel="Page icon" href="/logos/rl.svg" />
+
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nothing+You+Could+Do&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <!--ThreeJS-->
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+              }
+            }
+        </script>
+    </head>
+
+    <body data-barba="wrapper">
+        <!--Content that will not change between pages(navbar)-->
+        <nav class="navbar">
+          <div class="name--tag">
+            <a href="https://www.instagram.com/m0mar__/" target="_blank">OMAR P.</a>
+          </div>
+          <div class="nav--icon">
+              +
+          </div>
+      </nav>
+      <div class="navbar--page">
+        <div class="navbar--container">
+          <h2 class="navbar--header"><a href="/">HOME</a> 
+            <img class="navbar--image" src="/src/img/home/_DSC6745-Edit-Edit.jpg"></h2>
+
+          <h2 class="navbar--header"><a href="/about.html">ABOUT</a>
+            <img class="navbar--image" src="/src/img/slider/7.jpg"></h2>
+
+          <h2 class="navbar--header"><a href="/work.html">WORK</a>
+            <img class="navbar--image" src="/src/img/work/DSC_1331.jpg"></h2>
+        </div>
+      </div>
+
+        <main data-barba="container" data-barba-namespace="home">
+          <!--Content of the page-->
+          <!--Main Home Section-->
+          <section class="home">
+            <div class="header--container">
+              <h1 class="header--first">WEB DESIGNER, DEVELOPER AND</h1>
+              <h1 class="header--second">PHOTOGRAPHER</h1>
+            </div>
+            <img src="/src/img/home/_DSC6312-Edit-Edit-Edit.jpg" class="home--image img--home--1">
+            <img src="/src/img/home/_DSC6745-Edit-Edit.jpg" class="home--image img--home--2">
+            <img src="/src/img/home/DSC_0940.jpg" class="home--image--h img--home--3">
+            <img src="/src/img/home/DSC_1134.jpg" class="home--image img--home--4">
+          </section>
+
+          <section class="slider">
+            <div class="slider--bg"></div>
+            <div class="slider--container">
+
+              <img class="slider--image--holder" src="/src/img/slider/1.JPG">
+
+            </div>
+            <div class="info--container">
+              <div class="info--element">3o</div>
+              <div class="info--element">F5</div>
+              <div id="pictureText" class="info--element">Lago de Cuitzeo</div>
+              <div id="pictureDate" class="info--element">[2021]</div>
+            </div>
+          </section>
+        </main>
+
+        <!--Main JS-->
+        <script defer src="/scripts/main.js"></script>
+        <script defer src="/scripts/home.js"></script>
+
+        <!--BarbaJS-->
+        <script src="https://unpkg.com/@barba/core"></script>
+        <!--GSAP and plugins-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        
+        <!--Lenis-->
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    </body>
+</html>
