@@ -27,11 +27,11 @@
         </script>
     </head>
 
-    <body data-barba="wrapper">
+    <body>
         <!--Content that will not change between pages(navbar)-->
         <nav class="navbar">
           <div class="name--tag">
-            <a href="https://www.instagram.com/m0mar__/" target="_blank">OMAR P.</a>
+            <a  class="name--tag--a" href="https://www.instagram.com/m0mar__/" target="_blank">OMAR P.G.</a>
           </div>
           <div class="nav--icon">
               +
@@ -39,21 +39,20 @@
       </nav>
       <div class="navbar--page">
         <div class="navbar--container">
-          <h2 class="navbar--header"><a href="/">HOME</a> 
+          <h2 class="navbar--header"><a id="home">HOME</a> 
             <img class="navbar--image" src="/src/img/home/_DSC6745-Edit-Edit.jpg"></h2>
 
-          <h2 class="navbar--header"><a href="/about.html">ABOUT</a>
+          <h2 class="navbar--header"><a id="about">ABOUT</a>
             <img class="navbar--image" src="/src/img/slider/7.jpg"></h2>
 
-          <h2 class="navbar--header"><a href="/work.html">WORK</a>
-            <img class="navbar--image" src="/src/img/work/DSC_1331.jpg"></h2>
+          <h2 class="navbar--header"><a id="work">WORK</a>
+            <img class="navbar--image" src="/src/img/work/10.jpg"></h2>
         </div>
       </div>
 
-        <main data-barba="container" data-barba-namespace="home">
           <!--Content of the page-->
           <!--Main Home Section-->
-          <section class="home">
+          <section id="begin" class="home">
             <div class="header--container">
               <h1 class="header--first">WEB DESIGNER, DEVELOPER AND</h1>
               <h1 class="header--second">PHOTOGRAPHER</h1>
@@ -78,14 +77,31 @@
               <div id="pictureDate" class="info--element">[2021]</div>
             </div>
           </section>
-        </main>
+
+          <section class="contact">
+            <div class="text--container">
+              <div class="contact--title">CONTACT</div>
+              <div class="contact--subtitle">Email</div>
+              <div class="contact--info"><a href="mailto:omarperezgonzalez.03@gmail.com">omarperezgonzalez.03@gmail.com</a></div>
+              <div class="contact--subtitle">Instagram</div>
+              <div class="contact--info"><a href="https://www.instagram.com/m0mar__/" target="_blank">m0mar__</a></div>
+            </div>
+          
+            <div class="contact--image--container">
+              <img class="contact--image" src="/src/img/work/1.jpg">
+            </div>
+          </section>
+
+          <section class="footer">
+            <div>Developed by <a href="https://github.com/omarperezgonzalez" target="_blank">Omar Pérez</a></div>
+            <div class="footer--date">April 2024</div>
+          </section>
 
         <!--Main JS-->
         <script defer src="/scripts/main.js"></script>
         <script defer src="/scripts/home.js"></script>
+        <script defer src="/scripts/contact.js"></script>
 
-        <!--BarbaJS-->
-        <script src="https://unpkg.com/@barba/core"></script>
         <!--GSAP and plugins-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>

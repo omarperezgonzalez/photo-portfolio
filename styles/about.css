@@ -1,0 +1,14 @@
+:root {
+    --background: #0F0F0F;
+    --principal: #DE5912; 
+    --secondary: #DE725C;
+    --text: #F2F1F1;
+}
+
+
+.about{
+    min-height: 100vh;
+    min-width: 100vw;
+
+    position: relative;
+}

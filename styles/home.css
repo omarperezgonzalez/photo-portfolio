@@ -125,21 +125,16 @@
     min-width: 100vw;
 
     position: relative;
+    text-align: center;
 }
 
 .slider--image--holder{
-    position: absolute;
-
     max-width: 60vw;
     max-height: 60vh;
 
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    margin-top: 10%;
 
     z-index: 2;
-
-
 }
 
 .info--container{

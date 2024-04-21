@@ -27,12 +27,31 @@
         </script>
     </head>
 
-    <body data-barba="wrapper">
+    <body>
+      <nav class="navbar">
+        <div class="name--tag">
+          <a  class="name--tag--a" href="https://www.instagram.com/m0mar__/" target="_blank">OMAR P.G.</a>
+        </div>
+        <div class="nav--icon">
+            +
+        </div>
+    </nav>
+    <div class="navbar--page">
+      <div class="navbar--container">
+        <h2 class="navbar--header"><a id="home">HOME</a> 
+          <img class="navbar--image" src="/src/img/home/_DSC6745-Edit-Edit.jpg"></h2>
 
-        <main data-barba="container" data-barba-namespace="about">
+        <h2 class="navbar--header"><a id="about">ABOUT</a>
+          <img class="navbar--image" src="/src/img/slider/7.jpg"></h2>
+
+        <h2 class="navbar--header"><a id="work">WORK</a>
+          <img class="navbar--image" src="/src/img/work/10.jpg"></h2>
+      </div>
+    </div>
+
           <!--Content of the page-->
           <!--Main Home Section-->
-          <section class="home">
+          <section  id="begin" class="home">
             <div class="header--container">
               <h1 class="header--first">ABOUT</h1>
               <h1 class="header--second">ABOUT</h1>
@@ -40,16 +59,14 @@
 
 
           </section>
-        </main>
 
         <!--Main JS-->
         <script defer src="/scripts/main.js"></script>
 
-        <!--BarbaJS-->
-        <script src="https://unpkg.com/@barba/core"></script>
         <!--GSAP and plugins-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
         <!--Lenis-->
         <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
     </body>

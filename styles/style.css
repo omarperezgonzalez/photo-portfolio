@@ -137,3 +137,104 @@ a{
     cursor: pointer;
     color: var(--secondary);
 }
+
+/*
+------------------CONTACT------------------------------------------------
+*/
+
+.contact{
+    min-height: 100vh;
+    min-width: 100vw;
+
+    position: relative;
+}
+
+.text--container{
+    max-width: 50vw;
+    height: 100vh;
+
+    margin: 0vh 5vw;
+
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact--title{
+    font-family: "Abril Fatface";
+    font-size: 21.75vw;
+
+    margin: 0vh -5.5vw;
+
+    z-index: -1;
+
+    color: var(--principal);
+}
+
+.contact--subtitle{
+    font-family: "Nothing you could do";
+    font-size: 36px;
+
+    color: var(--principal);
+}
+
+.contact--info a{
+    font-family: "Rubik";
+    font-size: 48px;
+
+    color: var(--text);
+
+    transition: .2s linear;
+}
+
+.contact--info a:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+
+.contact--image{
+    object-fit:cover;
+
+    width: 20vw;
+
+    max-height: 50vh;
+
+}
+
+.contact--image--container{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-10%, -50%);
+}
+
+.footer{
+    display: flex;
+
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer div{
+    color: var(--text);
+
+    font-family: "Rubik";
+    font-size: 16px;
+
+    margin: 1vh 5vw;
+
+}
+
+.footer div a{
+    color: var(--principal);
+    transition: .2s linear;
+}
+
+.footer div a:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}

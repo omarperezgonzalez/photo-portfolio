@@ -1,16 +1,12 @@
-let tlIntroImages;
-
 const runAnimationHome = () => {
      //Home image animation on scrolling
-    tlIntroImages = gsap.timeline({
+    const tlIntroImages = gsap.timeline({
         scrollTrigger: {
             trigger: ".home",
             start: "top top", // Animation starts when the top of the container hits the top of the viewport
             end: "bottom top", // Animation ends when the bottom of the container hits the top of the viewport
             scrub: true, // Smoothly animates the changes
             //markers: true // For debugging, can be removed
-            
-
         }
     });
     
@@ -33,7 +29,7 @@ const runAnimationHome = () => {
 
 
      //Slider image animation on scrolling
-     tlSlider = gsap.timeline({
+    const tlSlider = gsap.timeline({
         scrollTrigger: {
             trigger: ".slider",
             start: "top top", // Animation starts when the top of the container hits the top of the viewport
@@ -222,20 +218,9 @@ const runAnimationHome = () => {
     tlSlider.to(".slider--image--holder", {
         scale: 1,
         opacity: 1,
-          
     }, "7I-E");
+
 };
 
 runAnimationHome();
-
-barba.hooks.after(({next}) => {
-    if(next.namespace === "home") runAnimationHome();
-});
-
-barba.hooks.before(() => {
-    let triggers = ScrollTrigger.getAll();
-    triggers.forEach( trigger => {			
-      trigger.kill();
-    });
-    document.window.scrollTo(0,0);
-});
+ScrollTrigger.refresh();
