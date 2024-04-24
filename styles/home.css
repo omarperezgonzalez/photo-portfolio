@@ -207,11 +207,11 @@
 }
 @media (max-width: 600px) {
     .header--first{
-        font-size: 54px;
+        font-size: 40px;
     }
     
     .header--second{
-        font-size: 60px;
+        font-size: 46px;
     }
 
     .home--image{
