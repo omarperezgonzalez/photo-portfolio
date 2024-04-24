@@ -1,5 +1,5 @@
 const datesPlaces = [
-    {date: '[2021]',place: 'Lago de Cuitzeo'},
+    {date: '[2021]',place: 'Saltillo'},
     {date: '[2021]',place: 'Morelia'},
     {date: '[2021]',place: 'Saltillo'},
     {date: '[2024]',place: 'Monterrey'},
