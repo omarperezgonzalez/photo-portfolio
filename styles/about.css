@@ -129,12 +129,28 @@
     margin: 5vh auto 5vh auto;
     }
     .info--container{
-        font-size: 32px;
+        font-size: 22px;
     
         max-width: 70vw;
     }
     .quote--container{
         font-size: 72px;
+    }
+
+    .cont--1{
+        order: 1 !important;
+        padding-bottom: 5vh;
+    }
+
+    .cont--2{
+        order: 3;
+    }
+
+    .cont--3{
+        order: 2;
+    }
+    #canvas{
+        z-index: -1;
     }
 }
 @media (max-width: 425px) {
