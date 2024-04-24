@@ -146,6 +146,8 @@ a{
     min-height: 100vh;
     min-width: 100vw;
 
+    height: fit-content;
+
     position: relative;
 }
 
@@ -160,6 +162,9 @@ a{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    position: relative;
+
+    margin-bottom: 10vh;
 }
 
 .contact--title{
@@ -217,6 +222,9 @@ a{
 
     justify-content: space-between;
     flex-direction: row;
+    position: relative;
+
+    margin-top: 5vh;
 }
 
 .footer div{
@@ -245,7 +253,7 @@ a{
 @media (max-width: 1440px) {
     .contact--image{
         width: 20vw;
-        max-height: 20vh;
+        max-height: 50vh;
     }
 }
 @media (max-width: 1024px) {

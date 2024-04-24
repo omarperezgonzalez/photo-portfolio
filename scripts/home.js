@@ -1,6 +1,16 @@
-const runAnimationHome = () => {
+const datesPlaces = [
+    {date: '[2021]',place: 'Lago de Cuitzeo'},
+    {date: '[2021]',place: 'Morelia'},
+    {date: '[2021]',place: 'Saltillo'},
+    {date: '[2024]',place: 'Monterrey'},
+    {date: '[2022]',place: 'Monterrey'},
+    {date: '[2021]',place: 'Saltillo'},
+    {date: '[2021]',place: 'Saltillo'},
+]
+
+const runLandingAnimation = () => {
      //Home image animation on scrolling
-    const tlIntroImages = gsap.timeline({
+     const tlIntroImages = gsap.timeline({
         scrollTrigger: {
             trigger: ".home",
             start: 0, // Animation starts when the top of the container hits the top of the viewport
@@ -26,8 +36,9 @@ const runAnimationHome = () => {
     tlIntroImages.to(".header--container", {
         y: '15vw',
     }, 0);
+};
 
-
+const runAnimationHomeDesktop = () => {
      //Slider image animation on scrolling
     const tlSlider = gsap.timeline({
         scrollTrigger: {
@@ -56,10 +67,10 @@ const runAnimationHome = () => {
         css:{backgroundImage:'url(/src/img/slider/2.jpg)'},  
     });
     tlSlider.set("#pictureText", {
-        text:"Morelia",  
+        text:datesPlaces[1].place,  
     });
     tlSlider.set("#pictureDate", {
-        text:"[2021]",  
+        text:datesPlaces[1].date,  
     });
     tlSlider.to(".slider", {
         y:0,
@@ -86,10 +97,10 @@ const runAnimationHome = () => {
         css:{backgroundImage:'url(/src/img/slider/3.jpg)'},  
     });
     tlSlider.set("#pictureText", {
-        text:"Saltillo",  
+        text:datesPlaces[2].place,  
     });
     tlSlider.set("#pictureDate", {
-        text:"[2021]",  
+        text:datesPlaces[2].date,  
     });
     tlSlider.to(".slider", {
         y:0,
@@ -116,10 +127,10 @@ const runAnimationHome = () => {
         css:{backgroundImage:'url(/src/img/slider/4.jpg)'},  
     });
     tlSlider.set("#pictureText", {
-        text:"Monterrey",  
+        text:datesPlaces[3].place,  
     });
     tlSlider.set("#pictureDate", {
-        text:"[2024]",  
+        text:datesPlaces[3].date,  
     });
     tlSlider.to(".slider", {
         y:0,
@@ -146,10 +157,10 @@ const runAnimationHome = () => {
         css:{backgroundImage:'url(/src/img/slider/5.jpg)'},  
     });
     tlSlider.set("#pictureText", {
-        text:"Monterrey",  
+        text:datesPlaces[4].place,  
     });
     tlSlider.set("#pictureDate", {
-        text:"[2022]",  
+        text:datesPlaces[4].date,  
     });
     tlSlider.to(".slider", {
         y:0,
@@ -176,10 +187,10 @@ const runAnimationHome = () => {
         css:{backgroundImage:'url(/src/img/slider/6.jpg)'},  
     });
     tlSlider.set("#pictureText", {
-        text:"Saltillo",  
+        text:datesPlaces[5].place,  
     });
     tlSlider.set("#pictureDate", {
-        text:"[2021]",  
+        text:datesPlaces[5].date,  
     });
     tlSlider.to(".slider", {
         y:0,
@@ -206,10 +217,10 @@ const runAnimationHome = () => {
         css:{backgroundImage:'url(/src/img/slider/7.jpg)'},  
     });
     tlSlider.set("#pictureText", {
-        text:"Saltillo",  
+        text:datesPlaces[6].place,  
     });
     tlSlider.set("#pictureDate", {
-        text:"[2021]",  
+        text:datesPlaces[6].date,  
     });
     tlSlider.to(".slider", {
         y:0,
@@ -222,5 +233,42 @@ const runAnimationHome = () => {
 
 };
 
-runAnimationHome();
+const runAnimationHomeMobile = () => {
+    let imgSourceHome = 1;
+
+    const tlHomeMobile = gsap.timeline({
+        repeat: -1,
+        repeatDelay: 2,
+    });  
+    
+
+    tlHomeMobile.to(".slider", {opacity: 0, duration: .75, 
+        onComplete: function(){
+        if(imgSourceHome === 7){
+            imgSourceHome = 1;
+        }
+
+        tlHomeMobile.set("#pictureText", {
+            text:datesPlaces[imgSourceHome-1].place,  
+        });
+        tlHomeMobile.set("#pictureDate", {
+            text:datesPlaces[imgSourceHome-1].date,  
+        });
+        gsap.set(".slider--image--holder", { attr: { src: `/src/img/slider/${imgSourceHome}.JPG`}});
+        imgSourceHome++;
+    },}, "s-init");
+
+
+    tlHomeMobile.to(".slider", {opacity: 1, duration: .75, delay:.5}, "s-end");
+
+};
+
+runLandingAnimation();
+console.log(window.innerWidth, window.innerHeight);
+if(window.innerWidth > 770){
+    runAnimationHomeDesktop();
+} else{
+    runAnimationHomeMobile();
+}
+
 ScrollTrigger.refresh();

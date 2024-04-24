@@ -198,7 +198,7 @@
 }
 @media (max-width: 770px) {
     .slider--image--holder{
-        margin-top: 50%;
+        margin-top: 10%;
     }
 
     .info--element{
