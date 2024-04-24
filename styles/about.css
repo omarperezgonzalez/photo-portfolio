@@ -133,12 +133,12 @@
     
         max-width: 70vw;
     }
+    .quote--container{
+        font-size: 72px;
+    }
 }
 @media (max-width: 425px) {
     .info--container{
         font-size: 24px;
-    }
-    .quote--container{
-        font-size: 72px;
     }
 }

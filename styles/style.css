@@ -282,6 +282,22 @@ a{
     }
 }
 @media (max-width: 600px) {
+    .contact{
+        padding-top: 35vh;
+    }
+
+    .contact--image--container{
+        top: 50%;
+        left: 45%;
+        transform: translate(-39%, -60%);
+    }
+
+    .contact--image{
+        width: 70vw;
+
+        max-height: 45vh;
+    }
+
     .contact--info a{
         font-size: 32px;
     }
