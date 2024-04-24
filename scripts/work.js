@@ -62,7 +62,7 @@ targets.forEach(function(target){
         scaleY: 2.5,
         zIndex: 10,
         x: xCenter - cx,
-        y: yCenter - cy
+        y: yCenter - cy*1.1
     }, 0);
 
     tlWork.to(target.parentElement, 0.6,{

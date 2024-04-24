@@ -5,7 +5,7 @@
 
 :root {
     --background: #0F0F0F;
-    --principal: #DE5912; 
+    --principal: #82370e; 
     --secondary: #DE725C;
     --text: #F2F1F1;
 
@@ -42,7 +42,7 @@
 .header--first{
     color: var(--principal);
     font-family: "Abril Fatface";
-    font-size: 96px;
+    font-size: 88px;
 
     margin: 0 0;
 }
@@ -154,4 +154,108 @@
     font-size: 32px;
 
     color: var(--principal);
+}
+
+/*
+------------------------------RESPONSIVE------------------------------
+*/
+@media (max-width: 1024px) {
+    .info--element{
+        font-size: 24px;
+    }
+    .slider--image--holder{
+        max-width: 70vw;
+        max-height: 70vh;
+    
+        margin-top: 50%;
+    }
+    .home--image{
+        max-width: 30vw;
+        min-width: 25vw;
+    }
+    
+    .home--image--h{
+        max-width: 50vw;
+        min-width: 20vw;
+    }
+    
+    .img--home--1{
+        left: 70%;
+        bottom: 10%;
+    }
+    
+    .img--home--3{
+        left: 10%;
+        bottom: 5%;
+        
+    }
+    
+    .img--home--4{
+        left: 60%;
+        top: 15%;
+        
+    }
+}
+@media (max-width: 770px) {
+    .slider--image--holder{
+        margin-top: 50%;
+    }
+
+    .info--element{
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .header--first{
+        font-size: 54px;
+    }
+    
+    .header--second{
+        font-size: 60px;
+    }
+
+    .home--image{
+        max-width: 40vw;
+    }
+    
+    .home--image--h{
+        max-width: 60vw;
+    }
+    
+    .img--home--1{
+        left: 50%;
+        bottom: 5%;
+    }
+    
+    .img--home--3{
+        left: 10%;
+        bottom: 30%;
+    }
+
+    .info--element{
+        font-size: 14px;
+    }
+
+    .slider--image--holder{
+        max-width: 90vw;
+        max-height: 90vh;
+    }
+}
+@media (max-width: 425px) {
+    .header--first{
+        font-size: 46px;
+    }
+    
+    .header--second{
+        font-size: 50px;
+    }
+}
+@media (max-width: 375px) {
+    .header--first{
+        font-size: 36px;
+    }
+    
+    .header--second{
+        font-size: 40px;
+    }
 }

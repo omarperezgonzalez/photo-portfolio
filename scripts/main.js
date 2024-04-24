@@ -61,13 +61,13 @@ const toggleMenu = () => {
         gsap.to(".navbar--page", {x:window.innerWidth});
         gsap.to(".nav--icon", {rotation : 0, duration: .2});
         gsap.to(".navbar", {backgroundColor : "#0F0F0F", duration: .2});
-        gsap.to(".name--tag--a", {color : "#DE5912", duration: .2});
-        gsap.to(".nav--icon", {color : "#DE5912", duration: .2});
+        gsap.to(".name--tag--a", {color : "#82370e", duration: .2});
+        gsap.to(".nav--icon", {color : "#82370e", duration: .2});
     } else{
         navIcon.classList.add('open');
         gsap.to(".navbar--page", {x:0});
         gsap.to(".nav--icon", {rotation : 45, duration: .2});
-        gsap.to(".navbar", {backgroundColor : "#DE5912", duration: .2});
+        gsap.to(".navbar", {backgroundColor : "#82370e", duration: .2});
         gsap.to(".name--tag--a", {color : "#0F0F0F", duration: .2});
         gsap.to(".nav--icon", {color : "#0F0F0F", duration: .2});
     }

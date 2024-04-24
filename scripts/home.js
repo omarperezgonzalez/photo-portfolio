@@ -3,7 +3,7 @@ const runAnimationHome = () => {
     const tlIntroImages = gsap.timeline({
         scrollTrigger: {
             trigger: ".home",
-            start: "top top", // Animation starts when the top of the container hits the top of the viewport
+            start: 0, // Animation starts when the top of the container hits the top of the viewport
             end: "bottom top", // Animation ends when the bottom of the container hits the top of the viewport
             scrub: true, // Smoothly animates the changes
             //markers: true // For debugging, can be removed

@@ -1,6 +1,6 @@
 :root {
     --background: #0F0F0F;
-    --principal: #DE5912; 
+    --principal: #82370e; 
     --secondary: #DE725C;
     --text: #F2F1F1;
 }
@@ -158,4 +158,90 @@
 .plane:nth-of-type(4) .plane--img:nth-of-type(4){
     top: 70%;
     left: 70%;
+}
+
+/*
+------------------------------RESPONSIVE------------------------------
+*/
+@media (max-width: 1440px) {
+    .plane--img{
+        max-height: 20vh;
+    }
+}
+@media (max-width: 1024px) {
+    .plane--img{
+        max-height: 18vh;
+    }
+}
+@media (max-width: 770px) {
+    .plane--img{
+        max-height: 15vh;
+    }
+}
+@media (max-width: 600px) {
+    .plane--img{
+        max-height: 12vh;
+    }
+}
+@media (max-width: 425px) {
+    .plane--img{
+        max-height: 10vh;
+    }
+
+    /*--------------------------PLANE 1 -------------------------------*/
+
+.plane:nth-of-type(2) .plane--img:nth-of-type(1){
+    top: 20%;
+    left: 85%;
+}
+
+.plane:nth-of-type(2) .plane--img:nth-of-type(2){
+    top: 55%;
+    left: 10%;
+}
+
+.plane:nth-of-type(2) .plane--img:nth-of-type(3){
+    top: 50%;
+    left: 35%;
+}
+
+.plane:nth-of-type(2) .plane--img:nth-of-type(4){
+    top: 55%;
+    left: 60%;
+}
+
+.plane:nth-of-type(2) .plane--img:nth-of-type(5){
+    top: 85%;
+    left: 85%;
+}
+
+/*--------------------------PLANE 2 -------------------------------*/
+
+.plane:nth-of-type(3) .plane--img:nth-of-type(2){
+    top: 20%;
+    left: 17%;
+}
+
+.plane:nth-of-type(3) .plane--img:nth-of-type(3){
+    top: 85%;
+    left: 12%;
+}
+
+.plane:nth-of-type(3) .plane--img:nth-of-type(4){
+    top: 30%;
+    left: 65%;
+}
+
+/*--------------------------PLANE 3 -------------------------------*/
+
+.plane:nth-of-type(4) .plane--img:nth-of-type(1){
+    top: 10%;
+    left: 8%;
+}
+
+.plane:nth-of-type(4) .plane--img:nth-of-type(3){
+    top: 76%;
+    left: 25%;
+}
+
 }

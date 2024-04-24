@@ -18,10 +18,10 @@ const initContact = () => {
         imgSource++;
     },}, "c-init");
 
-    tlContact.to(".contact--image", {height: 'auto',opacity: 1, duration: .75, delay:.5}, "c-end");
+    tlContact.to(".contact--image", {height: '50vh',opacity: 1, duration: .75, delay:.5}, "c-end");
 
     tlContact.to(".contact--title", {color: "#DE725C", duration: .75}, "c-init");
-    tlContact.to(".contact--title", {color: "#DE5912", duration: .75, delay: 1}, "c-end");
+    tlContact.to(".contact--title", {color: "#82370e", duration: .75, delay: 1}, "c-end");
 };
 
 document.addEventListener("DOMContentLoaded", initContact);

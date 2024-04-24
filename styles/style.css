@@ -1,6 +1,6 @@
 :root {
     --background: #0F0F0F;
-    --principal: #DE5912; 
+    --principal: #82370e; 
     --secondary: #DE725C;
     --text: #F2F1F1;
 
@@ -10,7 +10,7 @@
 /*
 font-family: "Abril Fatface";
 font-family: "Nothing you could do";
-font-family: "Rubik";
+font-family: "Nixie One";
 */
 
 body{
@@ -125,7 +125,7 @@ a{
     right: 5%;
     transform: translate(-5%, -50%);
 
-    font-family: "Rubik";
+    font-family: "Nixie One";
     font-size: 50px;
 
     color: var(--principal);
@@ -181,7 +181,7 @@ a{
 }
 
 .contact--info a{
-    font-family: "Rubik";
+    font-family: "Nixie One";
     font-size: 48px;
 
     color: var(--text);
@@ -222,7 +222,7 @@ a{
 .footer div{
     color: var(--text);
 
-    font-family: "Rubik";
+    font-family: "Nixie One";
     font-size: 16px;
 
     margin: 1vh 5vw;
@@ -237,4 +237,82 @@ a{
 .footer div a:hover{
     color: var(--secondary);
     cursor: pointer;
+}
+
+/*
+------------------------------RESPONSIVE------------------------------
+*/
+@media (max-width: 1440px) {
+    .contact--image{
+        width: 20vw;
+        max-height: 20vh;
+    }
+}
+@media (max-width: 1024px) {
+    .contact--image{
+        width: 20vw;
+        max-height: 15vh;
+    }
+    .contact--image--container{
+        top: 40%;
+        right: 10%;
+        transform: translate(-10%, -40%);
+    }
+}
+@media (max-width: 770px) {
+    .contact--image{
+        width: 50vw;
+    
+        max-height: 27.5vh;
+    }
+    
+    .contact--image--container{
+        position: absolute;
+        top: 20%;
+        right: 0%;
+        transform: translate(-50%, -0%);
+    }
+
+    .contact--info a{
+        font-size: 36px;
+    }
+
+    .contact--title{
+        margin-top: 500px;
+    }
+}
+@media (max-width: 600px) {
+    .contact--info a{
+        font-size: 32px;
+    }
+}
+@media (max-width: 425px) {
+    .contact{
+        padding-top: 30vh;
+    }
+    .contact--image{
+        width: 80vw;
+
+        max-height: 45vh;
+    }
+    .contact--image--container{
+        top: 50%;
+        left: 45%;
+        transform: translate(-39%, -60%);
+
+        width: 90vw;
+    }
+
+    .contact--info a{
+        font-size: 20px;
+    }
+
+    .footer div{
+        font-size: 10px;
+    }
+}
+@media (max-width: 375px) {
+    .contact--info a{
+        font-size: 18px;
+    }
 }

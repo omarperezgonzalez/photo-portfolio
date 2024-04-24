@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="/styles/home.css" rel="stylesheet" />
+        <link href="/styles/about.css" rel="stylesheet" />
         <link href="/styles/style.css" rel="stylesheet" />
 
         <title>Omar Pérez</title>
@@ -14,23 +14,23 @@
         <!--GoogleFonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nothing+You+Could+Do&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nixie+One&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 
         <!--ThreeJS-->
         <script type="importmap">
-            {
-              "imports": {
-                "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
-              }
+          {
+            "imports": {
+              "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
             }
-        </script>
+          }
+      </script>
     </head>
 
     <body>
       <nav class="navbar">
         <div class="name--tag">
-          <a  class="name--tag--a" href="https://www.instagram.com/m0mar__/" target="_blank">OMAR P.G.</a>
+          <a  class="name--tag--a" href="https://www.instagram.com/m0mar__/" target="_blank">m0mar__</a>
         </div>
         <div class="nav--icon">
             +
@@ -48,20 +48,64 @@
           <img class="navbar--image" src="/src/img/work/10.jpg"></h2>
       </div>
     </div>
-
+ 
           <!--Content of the page-->
           <!--Main Home Section-->
-          <section  id="begin" class="home">
-            <div class="header--container">
-              <h1 class="header--first">ABOUT</h1>
-              <h1 class="header--second">ABOUT</h1>
+          <section class="about">
+          </section>
+
+          <section id="begin" class="about--info">
+            <div class="info--flex--container--1">
+              <div class="info--container">
+                My name is <color class="highlight">Omar Pérez González</color>, 
+                I Am A <color class="highlight">Web Developer</color> With A Passion On Photography, Design And Life. This Page Is Part Of My Journey To Become A Great Web Designer And Developer While I Live Life And Continue Taking Pictures Of Every <color class="highlight">Beautiful</color> Thing Life Has To Show Me.
+                Falling Deeper And Deeper In Love With The Art Of Photography And Life Itself.
+              </div>
+
+              <img class="info--container--img" src="/src/img/home/DSC_1134.jpg">
+
+              <div class="info--container letter-right">
+                Loving Documentary Photography By Its Honesty, Capturing Life As It Is, Unfiltered And <color class="highlight">Authentic</color>. It Has The Power To Provoke Change, Inspiring Emplathy And Action Through The Lens Of A Camera That Witnesses The <color class="highlight">Resilience</color> Of The Human Spirit.
+                As I Continue To Explore And Grow As A <color class="highlight">Photographer</color>, I Am Filled With Excitement And Gratitude For The Journey That Lies Ahead.
+              </div>
             </div>
 
+            <div class="info--flex--container--2">
+              <div class="quote--container">
+                "Beautiful Things Don't Ask For Attention."<br>- James Thurber, The Secret Life Of Walter Mitty
+              </div>
+            </div>
 
           </section>
 
+          <section class="contact">
+            <div class="text--container">
+              <div class="contact--title">CONTACT</div>
+              <div class="contact--subtitle">Email</div>
+              <div class="contact--info"><a href="mailto:omarperezgonzalez.03@gmail.com">omarperezgonzalez.03@gmail.com</a></div>
+              <div class="contact--subtitle">Instagram</div>
+              <div class="contact--info"><a href="https://www.instagram.com/m0mar__/" target="_blank">m0mar__</a></div>
+            </div>
+          
+            <div class="contact--image--container">
+              <img class="contact--image" src="/src/img/work/1.jpg">
+            </div>
+          </section>
+
+          <section class="footer">
+            <div>Developed by <a href="https://github.com/omarperezgonzalez" target="_blank">Omar Pérez</a></div>
+            <div class="footer--date">April 2024</div>
+          </section>
+
+          <div id="canvas">
+
+          <div class="flash"></div>
+          </div>
+
         <!--Main JS-->
         <script defer src="/scripts/main.js"></script>
+        <script defer src="/scripts/contact.js"></script>
+        <script type="module" src="/scripts/about.js"></script>
 
         <!--GSAP and plugins-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
